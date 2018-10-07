@@ -1,0 +1,35 @@
+%YAML 1.2
+---
+url: https://thuis.basispoort.nl/login/thuisgebruiker/
+title: Basispoort
+description: Basispoort login page
+loginview:
+  description: div containing the login input fields and submit button
+  tag: div
+  id: "basispoort-loginView"
+  text: 'Thuisgebruik login\nProblemen met inloggen? Raadpleeg de leerkracht van uw kind.\nGebruikersnaam (e-mailadres)\nWachtwoord\nOnthoud mijn gebruikersnaam\n Inloggen\n  Gebruikersnaam of wachtwoord vergeten'
+  username_box:
+    description: username input field
+    tag: input
+    id: "basispoort-loginBox"
+  passwd_box:
+    description: password input field
+    tag: input
+    id: "basispoort-passwordBox"
+  login_button:
+    description: submit button
+    tag: button
+    id: "basispoort-buttonSubmit"
+thuisgebruik_message:
+  description: logging in directs to a page with this message, which is a link to click
+  tag: div
+  id: "basispoort-thuisgebruikMessage"
+  link:
+    tag: a
+    attribute: href
+start-educatieve-app-leerling:
+  description: |
+    The user has to select one of 2 buttons to click, one for the child and one for the parent.
+    Each button is a div with an image and some text (in divs). The child-button is the left one and has the id below.
+  id: "basispoort-educatieve-app-0"
+
