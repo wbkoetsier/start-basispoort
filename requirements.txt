@@ -1,0 +1,4 @@
+# requirements for the virtual env
+# python version: 3.4
+ruamel.yaml==0.15.76
+selenium==3.141.0
