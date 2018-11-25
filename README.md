@@ -9,7 +9,7 @@ my daughter uses my laptop, and frequently switches between the mouse and the to
 keyboard and the laptop keyboard. Besides practising reading, she practises her mouse and keyboard skills as well.
 
 At my laptop (Ubuntu), the following steps are needed to start playing: turn the laptop on, start a browser, navigate
-to https://thuis.basispoort.nl/, enter username and password to login and click one of the 2 buttons to enter the
+to https://thuis.basispoort.nl/, enter username and password to login and click one of the buttons to enter the
 game-area.
 
 Of course, parents should be involved. However, I find it convenient if my daughter can log in to the website without
@@ -37,7 +37,7 @@ Type=Application
 Categories=Utility;Application;
 ```
 
-I don't own Zoen de Bij, so I've gitignored that icon.
+I don't own Zoem de Bij (the protagonist of Veilig Leren Lezen), so I've gitignored that icon.
 
 ### Custom error
 I feel it's cleaner to add my own custom error so it's always clear when I intended to throw something or when
@@ -49,7 +49,7 @@ subject of setting environment variables just for the venv. I just added to my `
 
 ```
 export BASISPOORT_USERNAME=my email
-export BASISPORT_KEY=my Basispoort password
+export BASISPOORT_KEY=my Basispoort password
 ```
 
 ### Ruamel YAML
@@ -92,5 +92,11 @@ clean up after itself by closing the session and all windows. But here, the brow
 Responsibility to close the browser now lies with the humans rather than the script.
 
 I couldn't find a reference to detaching the Firefox window from the driver. I know that this is an experimental
-feature on chromedriver. I'm yet to find out if playing the game for some time will throw some kind of KeepAlive
-timeout.
+feature on chromedriver. Playing the game for some time won't throw some kind of KeepAlive timeout.
+
+## Roadmap
+1. My daughter has earned the privilege of playing a second game, which has appeared as a new button between the original 
+game app button and the paret app button. I'll have to write a second script with a desktop entry for her to play. This 
+also means splitting out app-specific behaviour and steps that are needed by both.
+2. Write tests / switch to TDD.
+3. Upgrade to Python 3.6.
