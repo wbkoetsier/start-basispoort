@@ -1,5 +1,8 @@
 # I don't own this picture
-zoemdebij.jpeg
+*.jpg
+
+# a little sed script to change the shebang for my 'prod env'
+*.sed
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
