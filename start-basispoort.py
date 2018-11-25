@@ -1,4 +1,4 @@
-#!/home/wbkoetsier/dev/venv-selenium/bin/python
+#!/home/wbkoetsier/.virtualenvs/venv-selenium/bin/python
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
